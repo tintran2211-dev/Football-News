@@ -7,7 +7,9 @@
     android:layout_height="wrap_content">
 
     <RelativeLayout
+        android:layout_margin="10dp"
         android:layout_width="match_parent"
+        android:background="@drawable/custom_button"
         android:layout_height="wrap_content">
 
         <ImageView
@@ -23,8 +25,9 @@
             android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
+            android:gravity="center"
             android:text="tittle"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="20dp"
             android:textColor="@android:color/white"
             android:textSize="15dp"
             android:textStyle="bold"></TextView>
@@ -34,15 +37,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="40dp"
             android:layout_toRightOf="@id/imageView"
-            android:text="time"></TextView>
+            android:text="?:?"></TextView>
 
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="70px"
             android:layout_height="70px"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="40dp"
             android:layout_toRightOf="@id/txt_live2"
             android:src="@mipmap/ic_launcher"></ImageView>
 
@@ -52,6 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/imageView1"
             android:text="tittle"
+            android:gravity="center"
             android:layout_centerVertical="true"
             android:textColor="@android:color/white"
             android:textSize="15dp"

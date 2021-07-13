@@ -37,7 +37,7 @@ public class AdapterLive extends RecyclerView.Adapter<AdapterLive.ViewHolder> {
     public void onBindViewHolder(@NonNull AdapterLive.ViewHolder holder, int position) {
         ItemLive itemLive = itemLivelist.get(position);
         holder.txt.setText(itemLive.getTeam1());
-//        holder.txt2.setText(itemLive.getTime());
+        holder.txt2.setText(itemLive.getTime());
         holder.txt3.setText(itemLive.getTeam2());
         Picasso.get().load(itemLive.getImg1()).into(holder.imageView);
         Picasso.get().load(itemLive.getImg2()).into(holder.imageView1);
@@ -54,7 +54,7 @@ public class AdapterLive extends RecyclerView.Adapter<AdapterLive.ViewHolder> {
             imageView = itemView.findViewById(R.id.imageView);
             imageView1 = itemView.findViewById(R.id.imageView1);
             txt = itemView.findViewById(R.id.txt_live);
-//            txt2 = itemView.findViewById(R.id.txt_live2);
+            txt2 = itemView.findViewById(R.id.txt_live2);
             txt3 = itemView.findViewById(R.id.txt_live3);
         }
     }

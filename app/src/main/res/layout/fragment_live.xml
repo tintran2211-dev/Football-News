@@ -11,7 +11,7 @@
         android:id="@+id/txt_frg_lt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/red"
+        android:textColor="@color/black"
         android:text="Saturday 14 August"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"

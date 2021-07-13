@@ -3,14 +3,24 @@ package object;
 public class ItemLive {
     private String team1,team2;
     private String img1,img2;
+    private String time;
 
     public ItemLive(){}
 
-    public ItemLive(String team1, String team2, String img1, String img2) {
+    public ItemLive(String team1, String team2, String img1, String img2, String time) {
         this.team1 = team1;
         this.team2 = team2;
         this.img1 = img1;
         this.img2 = img2;
+        this.time = time;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
     }
 
     public String getTeam1() {

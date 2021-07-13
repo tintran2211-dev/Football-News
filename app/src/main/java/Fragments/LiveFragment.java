@@ -98,10 +98,10 @@ public class LiveFragment extends Fragment {
                                 .eq(i)
                                 .text();
                         Log.i(".test", txt2 + "");
-//                        String txt3 = data.select("a.matchAbridged > time")
-//                                .eq(i)
-//                                .text();
-//                        Log.i(".test", txt3 + "");
+                        String txt3 = data.select("time.renderKOContainer:eq(2)")
+                                .eq(i)
+                                .text();
+                        Log.i(".test", txt3 + "");
                         String imgUrl1 = data.select("span.badge:eq(1)")
                                 .select("img")
                                 .eq(i)
@@ -112,7 +112,7 @@ public class LiveFragment extends Fragment {
                                 .eq(i)
                                 .attr("src");
                         Log.i(".test", imgUrl2 + "");
-                        itemLives.add(new ItemLive(txt1,txt2,imgUrl1,imgUrl2));
+                        itemLives.add(new ItemLive(txt1,txt2,imgUrl1,imgUrl2,"?-?"));
                         Log.i(".test" , "txt1" + txt1 + "txt2" + txt2);
                     }
             } catch (Exception e) {
